@@ -210,14 +210,6 @@ describe("Setting up Super War", function () {
 
       expect(fragmentHTML.children[0].innerHTML).toBe(expectedFragment.innerHTML);
     });
-
-    it("should return a filtered array for\
-     the given player type",function(){
-      let superWar = new Superwar(TEST_PLAYERS);
-      let expectedArray = superWar.filterPlayers('hero');
-
-      expect(expectedArray[0].type).toBe('hero');
-     })
   });
 
 
